@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">  
+  <head>    
+    <title>Login</title>    
+    <meta charset="UTF-8">
+    <meta name="title" content="Título de la WEB">
+    <meta name="description" content="Descripción de la WEB">    
+    <link href="Style.css" rel="stylesheet" type="text/css"/>
+     <!-- Los iconos tipo Solid de Fontawesome-->
+<linkrel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+<script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.6.0.min.map.js"></script>
+   </head>  
+  <body>
+
+    <div class="modal-dialog text-center">
+      <div class="col-sm-8 main-section">
+        <div class="modal-content">
+          <div class="col-12 user-img ">
+            <img src="imagenes/avatar.png">
+            
+          </div>
+          <form class="col-12" action="validar.php" method="post">
+            <div class="form-group" id="user-group" name="usuario" >
+              <input type="text" class="form-control" placeholder="Nombre de Usuario">
+            </div>
+            <div class="form-group" id="contraseña-group" name="contraseña">
+            <input type="password" class="form-control" placeholder=
+              "Contraseña">
+            </div>
+            <button type="submit" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i> ingresar</button>
+            
+          </form>
+          <div class="col-12 forgot">
+            <a href="#">Recordar contraseña</a>
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+  </body>  
+</html>
