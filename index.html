@@ -22,16 +22,15 @@
             <img src="imagenes/avatar.png">
             
           </div>
-          <form class="col-12" action="validar.php" method="post">
-            <div class="form-group" id="user-group" name="usuario" >
-              <input type="text" class="form-control" placeholder="Nombre de Usuario">
+          <form include file="registrar.php" method="post" class="col-12 ">
+            <div class="form-group" id="user-group">
+              <input type="text" class="form-control" name="name" placeholder="Nombre de Usuario">
             </div>
-            <div class="form-group" id="contraseña-group" name="contraseña">
-            <input type="password" class="form-control" placeholder=
+            <div class="form-group" id="contraseña-group">
+            <input type="password" class="form-control" name="email" placeholder=
               "Contraseña">
             </div>
-            <button type="submit" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i> ingresar</button>
-            
+            <button type="submit" class="btn btn-primary" name="register"><i class="fas fa-sign-in-alt"></i> ingresar</button>
           </form>
           <div class="col-12 forgot">
             <a href="#">Recordar contraseña</a>
@@ -41,5 +40,6 @@
         
       </div>
     </div>
+   
   </body>  
 </html>
